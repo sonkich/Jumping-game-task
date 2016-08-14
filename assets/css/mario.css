@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: sans-serif; }
+
+#bgdiv {
+  width: 900px;
+  height: 460px;
+  background-image: url(../img/bgimg.jpg);
+  margin: 0 auto; }
+  #bgdiv #game-over, #bgdiv #game-win {
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    border: 2px solid black;
+    top: 100px;
+    left: 450px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    display: none; }
+    #bgdiv #game-over h1, #bgdiv #game-win h1 {
+      font-size: 4em;
+      margin-top: 100px;
+      color: white; }
+
+#wrapper {
+  width: 900px;
+  height: 400px;
+  margin: 20px auto;
+  position: relative; }
+  #wrapper #score {
+    width: 100%;
+    height: 40px;
+    border: 1px solid black;
+    display: inline-block; }
+    #wrapper #score #lives {
+      float: left;
+      padding: 10px; }
+      #wrapper #score #lives span {
+        display: block;
+        float: left;
+        width: 24px;
+        height: 24px;
+        background-image: url(../img/heart2.png);
+        margin-right: 10px; }
+    #wrapper #score #bullets {
+      float: right;
+      padding: 5px;
+      margin-right: 20px; }
+      #wrapper #score #bullets p {
+        font-size: 1.6em; }
+  #wrapper #mario {
+    width: 60px;
+    height: 120px;
+    background-image: url(../img/mario.png);
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: 0;
+    left: 300px; }
+  #wrapper #dragon {
+    width: 60px;
+    height: 120px;
+    background-image: url(../img/drake.png);
+    position: absolute;
+    bottom: 0;
+    right: 5px; }
+  #wrapper .bul {
+    width: 15px;
+    height: 15px;
+    background-image: url(../img/fb.png);
+    position: absolute; }
+  #wrapper .hit {
+    animation: dis 0.3s;
+    animation-fill-mode: forwards; }
+@keyframes dis {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0;
+    transform: scale(2, 2); } }
+
+/*# sourceMappingURL=mario.css.map */
